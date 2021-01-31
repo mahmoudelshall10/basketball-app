@@ -13,7 +13,7 @@
                   <li class="sub-menu">
                     <a href="{{(Request::segment(1) == 'reports' || 'allowances') ? url("/reports"):'javascript:;'}}" class="
                       {{ Request::routeIs('reports.index') ? 'active' : '' }} 
-                      {{ Request::routeIs('reports.AssociationIndex') ? 'active' : '' }}  
+                      {{-- {{ Request::routeIs('reports.AssociationIndex') ? 'active' : '' }}   --}}
                       {{ Request::routeIs('reports.cairoAreaIndex') ? 'active' : '' }} 
                       {{ Request::routeIs('reports.MiniBasketIndex') ? 'active' : '' }}
                       ">
@@ -22,7 +22,7 @@
                     </a>
                     <ul class="sub">
                         <li class="{{ Request::routeIs('reports.index') ? 'active' : '' }}"><a  href="{{route('reports.index')}}">All</a></li>
-                        <li class="{{ Request::routeIs('reports.Association') ? 'active' : '' }}"><a  href="{{route('reports.AssociationIndex')}}">Association Report</a></li>
+                        {{-- <li class="{{ Request::routeIs('reports.Association') ? 'active' : '' }}"><a  href="{{route('reports.AssociationIndex')}}">Association Report</a></li> --}}
                         <li class="{{ Request::routeIs('reports.cairoAreaIndex') ? 'active' : '' }}"><a  href="{{route('reports.cairoAreaIndex')}}">Cairo Area Report</a></li>
                         <li class="{{ Request::routeIs('reports.MiniBasketIndex') ? 'active' : '' }}"><a  href="{{route('reports.MiniBasketIndex')}}">Mini Basket Report</a></li>
                     </ul>

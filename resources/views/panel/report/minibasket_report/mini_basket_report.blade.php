@@ -15,7 +15,7 @@
                               <li class="breadcrumb-item"><a href="{{route('reports.index')}}">Reports</a></li>
                               <li class="breadcrumb-item active" aria-current="page">All Reports</li>
                               <li>
-                                <a href="{{route('reports.AssociationIndex')}}" class="btn btn-success">Association Report</a>
+                                {{-- <a href="{{route('reports.AssociationIndex')}}" class="btn btn-success">Association Report</a> --}}
                                 <a href="{{route('reports.cairoAreaIndex')}}" class="btn btn-primary">Cairo Area Report</a>
                               </li>
                               {{-- <li>

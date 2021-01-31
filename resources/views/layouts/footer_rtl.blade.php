@@ -1,6 +1,6 @@
 <footer class="site-footer">
     <div class="text-center">
-        2019 &copy; <a href="#" target="_blank" style="color: #fff;">Hash Code.</a>
+        {{date('Y')}} &copy; <a href="#" target="_blank" style="color: #fff;">Hash Code.</a>
         <a href="#" class="go-top">
             <i class="fa fa-angle-up"></i>
         </a>
@@ -23,9 +23,11 @@
 <script src="{{url('design_rtl/js/respond.min.js')}}" ></script>
 <!--right slidebar-->
 <script src="{{url('design_rtl/js/slidebars.min.js')}}"></script>
+
 @if(Request::segment(2) == 'mini-basket-report')
-<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-@endif
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+@endif 
+
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/dataTables.buttons.min.js"></script>
 <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.2/js/buttons.flash.min.js"></script>

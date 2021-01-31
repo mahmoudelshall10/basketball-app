@@ -25,7 +25,7 @@
                   <section class="card">
                     <div class="card-body">
                       <center>
-                        <a href="{{route('reports.AssociationIndex')}}" class="btn btn-success">Association Report</a>
+                        {{-- <a href="{{route('reports.AssociationIndex')}}" class="btn btn-success">Association Report</a> --}}
                         <a href="{{route('reports.cairoAreaIndex')}}" class="btn btn-primary">Cairo Area Report</a>
                         <a href="{{route('reports.MiniBasketIndex')}}" class="btn btn-warning">Mini Basket Report</a>
                       </center>

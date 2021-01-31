@@ -78,7 +78,7 @@ Route::get('reports/cairo-area-report/exportpdf', 'ReportController@cairoAreaRep
 
 ////////association//////////
 
-Route::get('reports/association-report','ReportController@AssociationReport')->name('reports.AssociationIndex');
+// Route::get('reports/association-report','ReportController@AssociationReport')->name('reports.AssociationIndex');
 Route::get('reports/association-report/exportexcel', 'ReportController@associationReportExportExcel')->name('associationReportExportExcel');
 Route::get('reports/association-report/exportpdf', 'ReportController@associationReportExportPdf')->name('associationReportExportPdf');
 ////////association//////////
