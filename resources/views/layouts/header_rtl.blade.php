@@ -24,27 +24,27 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{url('design_rtl/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url('design_rtl')}}/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Bootstrap RTL CSS -->
-    <link href="{{url('design_rtl/css/bs-rtl/bootstrap-rtl.min.css')}}" rel="stylesheet">
-    <link href="{{url('design_rtl/css/bs-rtl/bootstrap-flipped.min.css')}}" rel="stylesheet">
+    <link href="{{url('design_rtl')}}/css/bs-rtl/bootstrap-rtl.min.css" rel="stylesheet">
+    <link href="{{url('design_rtl')}}/css/bs-rtl/bootstrap-flipped.min.css" rel="stylesheet">
   
   
-    <link href="{{url('design_rtl/css/bootstrap-reset.css')}}" rel="stylesheet">
+    <link href="{{url('design_rtl')}}/css/bootstrap-reset.css" rel="stylesheet">
       <!--external css-->
-    <link href="{{url('design_rtl/assets/font-awesome/css/font-awesome.css')}}" rel="stylesheet" />
+    <link href="{{url('design_rtl')}}/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
   
       <!--dynamic table-->
-    <link href="{{url('design_rtl/assets/advanced-datatable/media/css/demo_page.css')}}" rel="stylesheet" />
+    <link href="{{url('design_rtl')}}/assets/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
     {{-- <link href="{{url('design_rtl/assets/advanced-datatable/media/css/demo_table.css')}}" rel="stylesheet" /> --}}
-    <link rel="stylesheet" href="{{url('design_rtl/assets/data-tables/DT_bootstrap.css')}}" />
+    <link rel="stylesheet" href="{{url('design_rtl')}}/assets/data-tables/DT_bootstrap.css" />
         <!--right slidebar-->
-    <link href="{{url('design_rtl/css/slidebars.css')}}" rel="stylesheet">
+    <link href="{{url('design_rtl')}}/css/slidebars.css" rel="stylesheet">
         <!-- Custom styles for this template -->
         
-    <link href="{{url('design_rtl/css/style.css')}}" rel="stylesheet">
-    <link href="{{url('design_rtl/css/style-responsive.css')}}" rel="stylesheet" />
+    <link href="{{url('design_rtl')}}/css/style.css" rel="stylesheet">
+    <link href="{{url('design_rtl')}}/css/style-responsive.css" rel="stylesheet" />
 
 
     </head>
@@ -61,7 +61,7 @@
             </div>
           <!--logo start-->
           
-            <a href="#" class="logo"><img src="{{url('img/Logo(3).png')}}"></a>
+            <a href="#" class="logo"><img src="{{url('img')}}/Logo(3).png"></a>
           <!--logo end-->
           
           <div class="nav notify-row" id="top_menu">

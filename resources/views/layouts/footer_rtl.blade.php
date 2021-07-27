@@ -11,18 +11,18 @@
 
 <!-- js placed at the end of the document so the pages load faster -->
 
-<script src="{{url('design_rtl/js/jquery.js')}}"></script>
-<script src="{{url('design_rtl/js/jquery-ui-1.9.2.custom.min.js')}}"></script>
-<script src="{{url('design_rtl/js/jquery-migrate-1.2.1.min.js')}}"></script>
-<script src="{{url('design_rtl/js/bootstrap.min.js')}}"></script>
-<script class="include" type="text/javascript" src="{{url('design_rtl/js/jquery.dcjqaccordion.2.7.js')}}"></script>
-<script src="{{url('design_rtl/js/jquery.scrollTo.min.js')}}"></script>
-<script src="{{url('design_rtl/js/jquery.nicescroll.js')}}" type="text/javascript"></script>
-<script type="text/javascript" language="javascript" src="{{url('design_rtl/assets/advanced-datatable/media/js/jquery.dataTables.js')}}"></script>
-<script type="text/javascript" src="{{url('design_rtl/assets/data-tables/DT_bootstrap.js')}}"></script>
-<script src="{{url('design_rtl/js/respond.min.js')}}" ></script>
+<script src="{{url('design_rtl')}}/js/jquery.js"></script>
+<script src="{{url('design_rtl')}}/js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="{{url('design_rtl')}}/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="{{url('design_rtl')}}/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="{{url('design_rtl')}}/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="{{url('design_rtl')}}/js/jquery.scrollTo.min.js"></script>
+<script src="{{url('design_rtl')}}/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script type="text/javascript" language="javascript" src="{{url('design_rtl')}}/assets/advanced-datatable/media/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="{{url('design_rtl')}}/assets/data-tables/DT_bootstrap.js"></script>
+<script src="{{url('design_rtl')}}/js/respond.min.js" ></script>
 <!--right slidebar-->
-<script src="{{url('design_rtl/js/slidebars.min.js')}}"></script>
+<script src="{{url('design_rtl')}}/js/slidebars.min.js"></script>
 
 @if(Request::segment(2) == 'mini-basket-report')
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -40,7 +40,7 @@
 
 
 <!--common script for all pages-->
-<script src="{{url('design_rtl/js/common-scripts.js')}}"></script>
+<script src="{{url('design_rtl')}}/js/common-scripts.js"></script>
 
   @stack('adminjs')
 </body>

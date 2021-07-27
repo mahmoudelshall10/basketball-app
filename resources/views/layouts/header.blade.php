@@ -16,37 +16,38 @@
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">
     @endif
-    <link href="{{url('css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="{{url('css')}}/bootstrap.min.css" rel="stylesheet">
     
 
     <!-- Bootstrap core CSS -->
-    <link href="{{url('css/bootstrap-reset.css')}}" rel="stylesheet">
+    <link href="{{url('css')}}/bootstrap-reset.css" rel="stylesheet">
 
     <!--external css-->
-    <link href="{{url('assets/font-awesome/css/font-awesome.css')}}" rel="stylesheet" />
-    <link href="{{url('assets/jquery-easy-pie-chart/jquery.easy-pie-chart.css')}}" rel="stylesheet" type="text/css" media="screen"/>
-    <link rel="stylesheet" href="{{url('css/owl.carousel.css')}}" type="text/css">
+    <link href="{{url('assets')}}/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="{{url('assets')}}/jquery-easy-pie-chart/jquery.easy-pie-chart.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="{{url('css')}}/owl.carousel.css" type="text/css">
     <!-- Custom styles for this template -->
-    <link href="{{url('css/style.css')}}" rel="stylesheet">
-    <link href="{{url('css/style-responsive.css')}}" rel="stylesheet" />
-    <link href="{{url('css/navbar-style.css')}}" rel="stylesheet" />
+    <link href="{{url('css')}}/style.css" rel="stylesheet">
+    <link href="{{url('css')}}/style-responsive.css" rel="stylesheet" />
+    <link href="{{url('css')}}/navbar-style.css" rel="stylesheet" />
 
-    <link href="{{url('assets/fancybox/source/jquery.fancybox.css')}}" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="{{url('css/gallery.css')}}" />
+    <link href="{{url('assets')}}/fancybox/source/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{{url('css')}}/gallery.css" />
     
 
-    <link rel="stylesheet" type="text/css" href="{{url('assets/gritter/css/jquery.gritter.css')}}" />
-    <link href="{{url('assets/advanced-datatable/media/css/demo_page.css')}}" rel="stylesheet" />
-    <link rel="stylesheet" href="{{url('assets/data-tables/DT_bootstrap.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{url('assets/bootstrap-fileupload/bootstrap-fileupload.css')}}" />
-    <script src="{{url('js/jquery.js')}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{url('assets')}}/gritter/css/jquery.gritter.css" />
+    <link href="{{url('assets')}}/advanced-datatable/media/css/demo_page.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{url('assets')}}/data-tables/DT_bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="{{url('assets')}}/bootstrap-fileupload/bootstrap-fileupload.css" />
+
+    <script src="{{url('js')}}/jquery.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     
-  <link rel="stylesheet" type="text/css" href="{{url('assets/bootstrap-datepicker/css/datepicker.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{url('assets/bootstrap-timepicker/compiled/timepicker.css')}}" />
-    <link rel="stylesheet" type="text/css" href="{{url('assets/bootstrap-daterangepicker/daterangepicker-bs3.css')}}" />
-      <link rel="stylesheet" type="text/css" href="{{url('assets/bootstrap-datetimepicker/css/datetimepicker.css')}}" />
-      <link rel="stylesheet" type="text/css" href="{{url('assets/select2/css/select2.min.css')}}"/>
+  <link rel="stylesheet" type="text/css" href="{{url('assets')}}/bootstrap-datepicker/css/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="{{url('assets')}}/bootstrap-timepicker/compiled/timepicker.css" />
+    <link rel="stylesheet" type="text/css" href="{{url('assets')}}/bootstrap-daterangepicker/daterangepicker-bs3.css" />
+      <link rel="stylesheet" type="text/css" href="{{url('assets')}}/bootstrap-datetimepicker/css/datetimepicker.css" />
+      <link rel="stylesheet" type="text/css" href="{{url('assets')}}/select2/css/select2.min.css"/>
 
       
     
@@ -66,7 +67,7 @@
               </div>
             <!--logo start-->
             
-              <a href="#" class="logo"><img src="{{url('img/Logo(3).png')}}"></a>
+              <a href="#" class="logo"><img src="{{url('img')}}/Logo(3).png"></a>
             <!--logo end-->
             
             <div class="nav notify-row" id="top_menu">
