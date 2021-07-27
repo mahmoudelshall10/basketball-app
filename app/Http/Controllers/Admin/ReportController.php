@@ -50,205 +50,6 @@ public function index()
 
 public function MiniBasketIndex()
 {   
-    // $period_value = []; 
-    // $referees     = Referee::orderBy('gov_id')->pluck('referee_id')->toArray();
-    // $referees = Referee::whereIn('referee_type',['Second Division','Third Division','Mini Basket','Commessioner'])->whereHas('gov',function($q){
-    //     $q->where('gov_id',1);
-    // })->pluck('referee_id')->toArray();
-
-    // $leagues_id = League::where('league_type','mini_basket')
-    // ->where('league_start_date','like','%'. 2020 .'%')
-    // ->where('league_end_date','like','%'. 2021 .'%')
-    // // ->get();
-    // ->pluck('league_id')->toArray();
-    // return $leagues_id; 
-
-    // $arr_num_of_periods[] = DB::table('allowances')
-    //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-    //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-    //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-    //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-    //     ->where('allowance_type','mini_basket')
-    //     ->where('league_type','mini_basket')
-    //     ->whereIn('allowances.league_id',$leagues_id)
-    //     ->whereIn('allowances.referee_id',$referees)
-    //     ->groupBy('leage_matches_id')
-    //     ->pluck('num_of_periods')
-    //     ->toArray()
-        // ->get('num_of_periods')
-        // ;
-        // return $arr_num_of_periods;
-
-    // $arr_transition_allowance[] = DB::table('allowances')
-    //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-    //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-    //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-    //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-    //     ->where('allowance_type','mini_basket')
-    //     ->where('league_type','mini_basket')
-    //     ->whereIn('allowances.league_id',$leagues_id)
-    //     ->whereIn('allowances.referee_id',$referees)
-    //     ->groupBy('allowances.league_id')
-    //     ->groupBy('allowances.referee_id')
-    //     // ->get('transition_allowance');
-    //     ->pluck('transition_allowance')->toArray();
-    //     return $arr_transition_allowance;
-        
-        // $arr_num_of_periods[] = DB::table('allowances')
-        // ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        // ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        // ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        // ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        // ->where('allowance_type','mini_basket')
-        // ->where('league_type','mini_basket')
-        // ->whereIn('allowances.league_id',$leagues_id)
-        // ->whereIn('allowances.referee_id',$referees)
-        // ->groupBy('allowances.league_id')
-        // ->groupBy('allowances.referee_id')
-        // ->get('num_of_periods')
-        // ->sum('num_of_periods')
-        // ;
-        // ->pluck('num_of_periods')->toArray();
-        // return $arr_num_of_periods;
-
-        // return $arr_num_of_periods;
-        // return $arr_num_of_periods; ->toArray() flatten()
-
-        // $num_of_periods                = array_chunk(Arr::flatten($arr_num_of_periods),count($referees));
-        // return $num_of_periods;
-        // $transition_allowance          = array_chunk(Arr::flatten($arr_transition_allowance),count($referees));
-        
-        // return doubleFor($num_of_periods,$transition_allowance);
-    
-
-        // foreach($leagues_id as $league){
-        // foreach($referees as $referee){    
-        //     $arr_num_of_periods[] = DB::table('allowances')
-        //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        //     ->where('allowance_type','mini_basket')
-        //     ->where('league_type','mini_basket')
-        //     // ->where('allowances.league_id','leagues.league_id')
-        //     // ->where('allowances.referee_id','referees.referee_id')
-        //     // ->whereIn('allowances.league_id',$leagues_id)
-        //     // ->where('allowances.referee_id',$referee)
-
-        //     ->where('allowances.league_id',$league)
-        //     ->where('allowances.referee_id',$referee)
-        //     // ->whereIn('allowances.referee_id',$referees)
-        //     // // ->groupBy('allowances.league_id')
-        //     // ->groupBy('allowances.referee_id')
-        //     // ->sum('num_of_periods')
-        //     // ->selectRaw('sum(num_of_periods) as sum_num')
-        //     ->pluck('num_of_periods')
-        //     ->toArray()
-        //     // ->get()
-        //     // ->toSql('num_of_periods')
-        //     ;
-        // }
-
-        //     // ->each(function($item,$value){
-        //     //     if($item == 'league_id')
-        //     //     {
-        //     //         return $value;
-        //     //     }
-        //     // })
-        //     // ->groupBy('allowances_values.allowances_values_id')
-        //     // ->get()
-        //     // ;
-        //     // ->get('num_of_periods')
-        //     ;
-        //     // ->sum('num_of_periods');
-
-        //     $period_value[] = DB::table('allowances')
-        //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        //     ->where('allowance_type','mini_basket')
-        //     ->where('league_type','mini_basket')
-        //     ->whereIn('allowances.league_id',$leagues_id)
-        //     ->where('allowances.referee_id',$referee)
-        //     ->pluck('period_value')->first();
-
-        //     $nutrition_allowance[] = DB::table('allowances')
-        //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        //     ->where('allowance_type','mini_basket')
-        //     ->where('league_type','mini_basket')
-        //     ->whereIn('allowances.league_id',$leagues_id)
-        //     ->where('allowances.referee_id',$referee)
-        //     ->pluck('nutrition_allowance')->first();
-
-
-        //     $sum_num_of_periods[] = DB::table('allowances')
-        //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        //     ->where('allowance_type','mini_basket')
-        //     ->where('league_type','mini_basket')
-        //     ->whereIn('allowances.league_id',$leagues_id)
-        //     ->where('allowances.referee_id',$referee)
-        //     ->get('num_of_periods')
-        //     ->sum('num_of_periods');
-
-        //     $sum_of_transition_allowance[] = DB::table('allowances')
-        //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        //     ->where('allowance_type','mini_basket')
-        //     ->where('league_type','mini_basket')
-        //     ->whereIn('allowances.league_id',$leagues_id)
-        //     ->where('allowances.referee_id',$referee)
-        //     ->get('transition_allowance');
-        //     // ->sum('transition_allowance')
-
-        //     $total_of_nutrition_days[] = DB::table('allowances')
-        //     ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        //     ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        //     ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        //     ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        //     ->where('allowance_type','mini_basket')
-        //     ->where('league_type','mini_basket')
-        //     ->whereIn('allowances.league_id',$leagues_id)
-        //     ->where('allowances.referee_id',$referee)
-        //     ->where('num_of_periods','>=','2')
-        //     ->count();
-    
-        // }
-        // return $arr_num_of_periods;
-        // $arr = [];
-        // foreach($arr_num_of_periods as $arr_num_of_period)
-        // {
-        //     if(count($arr_num_of_period) > 1)
-        //     {
-        //         $arr[] = array_sum($arr_num_of_period);
-        //     }else{
-        //         $arr[] = $arr_num_of_period;
-        //     }
-        //     // return gettype();
-        // }
-        // return $arr;
-        // $num_of_periods                = array_chunk(Arr::flatten($arr),count($referees));
-        // return $num_of_periods;
-        // $total_of_period_value         = mutlpileEle($sum_num_of_periods,$sum_of_transition_allowance);
-        // return $sum_of_transition_allowance;
-        // $total_of_nutrition_allowances = mutlpileEle($nutrition_allowance,$total_of_nutrition_days);
-
-        // $all_total                     = array_map(function (...$arrays) {return array_sum($arrays);},$total_of_period_value,$total_of_nutrition_allowances); 
-        // foreach($all_total as $item)
-        // {
-        //     $ten_tax[]     = $item * 10/100;
-        //     $final_total[] = $item - ($item * 10/100);   
-        // }
-        // return $total_of_nutrition_allowances;
-    //     // return mutlpileEle($period_value,$arr1);
     return view('panel.report.minibasket_report.mini_basket_report');
 }
 
@@ -267,7 +68,6 @@ public function MiniBasketReport(Request $request)
         $all_total                     = [];
         $ten_tax                       = [];
         $final_total                   = [];
-        // $num_of_periods                = [];
         $transition_allowance          = [];
         $total_of_period_value         = [];
         $total_of_nutrition_allowances = [];
@@ -369,16 +169,6 @@ public function MiniBasketReport(Request $request)
             ->count();
     
         }
-        // $arr_num_of_periods[] = DB::table('allowances')
-        // ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        // ->leftjoin('referees','allowances.referee_id','referees.referee_id')
-        // ->leftjoin('leagues','allowances.league_id','leagues.league_id')
-        // ->leftjoin('referee_places','referee_places.referee_place_id','allowances_values.referee_place')
-        // ->where('allowance_type','mini_basket')
-        // ->where('league_type','mini_basket')
-        // ->whereIn('allowances.league_id',$leagues_id)
-        // ->whereIn('allowances.referee_id',$referees)
-        // ->pluck('num_of_periods')->toArray();
         foreach($leagues_id as $league){
             foreach($referees as $referee){    
                 $arr_num_of_periods[] = DB::table('allowances')
@@ -432,7 +222,6 @@ public function MiniBasketReport(Request $request)
             $final_total[] = $item - ($item * 10/100);   
         }
         return response()->json([$leagues_name,$start_date,$referee_fullname_ar,$referee_card_number,$period_value,$nutrition_allowance,doubleFor($num_of_periods,$transition_allowance),$sum_num_of_periods,$total_of_period_value,$sum_of_transition_allowance,$total_of_nutrition_days,$total_of_nutrition_allowances,$all_total,$ten_tax,$final_total],200);
-        // return response()->json([$leagues_name,$start_date,$sum_num_of_periods,$sum_of_transition_allowance,$total_of_period_value,$total_of_nutrition_allowances,$all_total],200);
     }
 }
 
@@ -497,9 +286,6 @@ public function miniBasketReportExportPdf()
             if ($miniObj->num_of_periods > 2) {
                 $total_feeding_days++;
             }
-            // $miniObj->total_transition_allowance = implode(' ',(array)$singleMiniReport->total_transition_allowance); 
-            // $miniObj->total_number_of_periods    = implode(' ',(array)$singleMiniReport->total_number_of_periods);
-            
 
             $miniObj->total_amount            = implode(' ',(array)$singleMiniReport->total_amount);
             $miniObj->ten_percent_taxes       = implode(' ',(array)$singleMiniReport->ten_percent_taxes);
