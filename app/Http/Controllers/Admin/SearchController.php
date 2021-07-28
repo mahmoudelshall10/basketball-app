@@ -28,28 +28,6 @@ class SearchController extends Controller
     {
         $referees = Referee::get();
 
-        $data = DB::table('matches_referees')
-        ->leftJoin('leage_matches','matches_referees.leage_matches_id','leage_matches.leage_matches_id')
-        ->leftJoin('leagues','leagues.league_id','leage_matches.league_id')
-        ->leftJoin('referees','referees.referee_id','matches_referees.referee_id')
-        ->leftjoin('teams as hometeams','hometeams.team_id','leage_matches.home_team')
-        ->leftjoin('teams as awayteams','awayteams.team_id','leage_matches.away_team')
-        ->leftjoin('halls','halls.hall_id','leage_matches.match_hall')
-        ->leftJoin('allowances','allowances.leage_matches_id','leage_matches.leage_matches_id')
-        ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
-        ->where('referees.referee_id',request('referee_id'))
-        ->where('league_start_date','like','%'.request('season_start_date').'%')
-        ->where('league_end_date','like','%'.request('season_end_date').'%')
-        ->selectRaw('referee_fullname,
-                     league_name,
-                     hometeams.team_name as team_home,
-                     awayteams.team_name as team_away,
-                     match_date,
-                     hall_name')
-        ->groupBy('leage_matches.leage_matches_id')
-        ->get();
-
-
         return view('panel.search.search',compact(['referees']));
     }
 
