@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
+@push('admincss')
+    <link rel="stylesheet" type="text/css" href="{{url('assets')}}/bootstrap-datepicker/css/datepicker.css" />
+@endpush
+
+
 <div class="row">
     <div class="col-lg-12">
         <!--breadcrumbs start -->
@@ -27,7 +32,7 @@
                             </div>
 
                             <div class="col-lg-3">
-                                <input type="number" min="2000" name="season_start_date" id="season_start_date" class="required  form-control @if ($errors->has('season_start_date')) is-valid @endif" placeholder="Season Start Date...">
+                                <input type="text" min="2000" name="season_start_date" id="season_start_date" class="required default-date-picker form-control  @if ($errors->has('season_start_date')) is-valid @endif" placeholder="Season Start Date...">
                                 <span class="help-block">@if ($errors->has('season_start_date'))
                                     {{ $errors->first('season_start_date') }}
                                     @endif
@@ -35,7 +40,7 @@
                             </div>
 
                             <div class="col-lg-3">
-                                <input type="number" min="2000" name="season_end_date" id="season_end_date" class="required  form-control @if ($errors->has('season_end_date')) is-valid @endif" placeholder="Season End Date...">
+                                <input type="text" min="2000" name="season_end_date" id="season_end_date" class="required default-date-picker form-control default-date-picker @if ($errors->has('season_end_date')) is-valid @endif" placeholder="Season End Date...">
                                 <span class="help-block">@if ($errors->has('season_end_date'))
                                     {{ $errors->first('season_end_date') }}
                                     @endif
@@ -85,6 +90,14 @@
     </div>
 </div>
 @push('adminjs')
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="{{url('assets')}}/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script>
+        $( function() {
+            $( "#season_start_date" ).datepicker();
+            $( "#season_end_date" ).datepicker();
+        } );
+    </script>
 
 <script type="text/javascript">
     $(document).ready(function () {

@@ -1,22 +1,5 @@
 @extends('layouts.app_rtl')
 @section('content')
-{{-- @push('admincss')
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
-<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.2/css/buttons.dataTables.min.css">   
-@endpush --}}
-
-{{-- <div class="row">
-    <div class="col-lg-12">
-        <!--breadcrumbs start -->
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <a href="{{route('search.decline')}}" class="btn btn-warning">Decline Search</a>
-            </ol>
-        </nav>
-        <!--breadcrumbs end -->
-    </div>
-</div> --}}
-
 <div class="row">
     <div class="col-lg-12">
         <section class="panel">

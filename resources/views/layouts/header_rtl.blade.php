@@ -46,7 +46,7 @@
     <link href="{{url('design_rtl')}}/css/style.css" rel="stylesheet">
     <link href="{{url('design_rtl')}}/css/style-responsive.css" rel="stylesheet" />
 
-
+    @stack('admincss')
     </head>
   
     <body>
@@ -119,7 +119,7 @@
       <script type="text/javascript">
                       $.ajax({
                           type:"GET",
-                          url:"{{url('design_rtl/getallnotifications')}}",
+                          url:"{{url('getallnotifications')}}",
                           success:function(response){
                               // console.log(response);
                               if (response) {
@@ -151,7 +151,7 @@
                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                           },
                       type:'post',
-                      url:"{{url('design_rtl/updatenotificationstoread')}}"+"/"+value,
+                      url:"{{url('updatenotificationstoread')}}"+"/"+value,
                       success:function(response){
                           // console.log(response);
                       },

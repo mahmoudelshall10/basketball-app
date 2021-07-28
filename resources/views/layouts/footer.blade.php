@@ -59,7 +59,7 @@
     <script type="text/javascript" src="{{url('assets')}}/bootstrap-fileupload/bootstrap-fileupload.js"></script>
  
     <script src="{{url('assets')}}/fancybox/source/jquery.fancybox.js"></script>
-     <script src="{{url('js')}}/modernizr.custom.js"></script>
+    <script src="{{url('js')}}/modernizr.custom.js"></script>
     <script src="{{url('js')}}/toucheffects.js"></script>
 
 
