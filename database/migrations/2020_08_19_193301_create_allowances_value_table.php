@@ -25,6 +25,10 @@ class CreateAllowancesValueTable extends Migration
             $table->integer('transition_allowance');
             $table->integer('subsistance_allowance')->default(0)->nullable();
             $table->integer('period_value')->nullable();
+            $table->enum('num_of_periods',[0,1,1.5,2,2.5,3])->default(0);
+            $table->double('total_amount',10,2);
+            $table->double('ten_percent_taxes');
+            $table->double('net_amount',10,2);
             $table->timestamps();
         });
     }
