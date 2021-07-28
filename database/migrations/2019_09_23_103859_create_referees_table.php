@@ -19,6 +19,7 @@ class CreateRefereesTable extends Migration
             $table->string('referee_mobile',12)->unique();
             $table->string('referee_email',50)->unique()->nullable();
             $table->string('refree_password');
+            $table->string('device_token');
             $table->string('referee_fullname')->nullable();
             $table->integer('gov_id')->nullable();
             $table->integer('city_id')->nullable();

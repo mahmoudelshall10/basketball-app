@@ -35,7 +35,6 @@ class SearchController extends Controller
         ->leftjoin('teams as hometeams','hometeams.team_id','leage_matches.home_team')
         ->leftjoin('teams as awayteams','awayteams.team_id','leage_matches.away_team')
         ->leftjoin('halls','halls.hall_id','leage_matches.match_hall')
-        // ->leftJoin('allowances','allowances.referee_id','referees.referee_id')
         ->leftJoin('allowances','allowances.leage_matches_id','leage_matches.leage_matches_id')
         ->leftjoin('allowances_values','allowances.allowances_values_id','allowances_values.allowances_values_id')
         ->where('referees.referee_id',request('referee_id'))
@@ -46,19 +45,10 @@ class SearchController extends Controller
                      hometeams.team_name as team_home,
                      awayteams.team_name as team_away,
                      match_date,
-                     hall_name,
-                     total_amount
-                     ')
+                     hall_name')
         ->groupBy('leage_matches.leage_matches_id')
-        // ->groupBy('allowances.referee_id')
-        // ->groupBy('league_name')
-        // league_name,
-        //              hometeams.team_name as team_home,
-        //              awayteams.team_name as team_away,
-        //              match_date,
-        //              hall_name,
-        //              total_amount
         ->get();
+
 
         return view('panel.search.search',compact(['referees']));
     }
@@ -88,10 +78,8 @@ class SearchController extends Controller
                         match_date,
                         hall_name,
                         total_amount')
-            // ->groupBy('allowances_values.allowances_values_id')
             ->groupBy('leage_matches.leage_matches_id')
             ->get();
-            // ->paginate(15);
 
             $total_row = $data->count();
 
