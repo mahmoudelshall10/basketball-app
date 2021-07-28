@@ -15,7 +15,7 @@ class CreateAllowancesTable extends Migration
     {
         Schema::create('allowances', function (Blueprint $table) {
             $table->bigIncrements('allowance_id');
-            $table->integer('league_match_id')->index();
+            $table->integer('league_matches_id')->index();
             $table->integer('allowances_values_id')->index();
             $table->tinyInteger('allowance_confirmation');
             $table->timestamps();
